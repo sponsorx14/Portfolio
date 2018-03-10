@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url(loader/index.css);
+@import url(mainDeclarations/index.css);
+@import url(header/index.css);
+@import url(about/index.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,221 +21,34 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
-
-.loader {
-  background-color: #424447;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1; }
-
-.loading {
-  position: absolute;
-  top: 50%;
-  left: 50%; }
-
-.loading-bar {
-  display: inline-block;
-  width: 8px;
-  height: 24px;
-  border-radius: 4px;
-  -webkit-animation: loading 1s ease-in-out infinite;
-  animation: loading 1s ease-in-out infinite; }
-
-.loading-bar:nth-child(1) {
-  background-color: #3498db;
-  -webkit-animation-delay: 0;
-  animation-delay: 0; }
-
-.loading-bar:nth-child(2) {
-  background-color: #c0392b;
-  -webkit-animation-delay: 0.09s;
-  animation-delay: 0.09s; }
-
-.loading-bar:nth-child(3) {
-  background-color: #f1c40f;
-  -webkit-animation-delay: .18s;
-  animation-delay: .18s; }
-
-.loading-bar:nth-child(4) {
-  background-color: #27ae60;
-  -webkit-animation-delay: .27s;
-  animation-delay: .27s; }
-
-@-webkit-keyframes loading {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1); }
-  20% {
-    -webkit-transform: scale(1, 2.2);
-    transform: scale(1, 2.2); }
-  40% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-
-@keyframes loading {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1); }
-  20% {
-    -webkit-transform: scale(1, 2.2);
-    transform: scale(1, 2.2); }
-  40% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
-  font-size: 62.5%;
-  font-weight: 400;
-  color: #000;
-  background-color: #31343a;
-  font-family: 'Oswald', sans-serif; }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto; }
-
-@-webkit-keyframes bounce {
-  0% {
-    top: 0; }
-  100% {
-    top: -5%; } }
-
-@keyframes bounce {
-  0% {
-    bottom: 6%; }
-  25% {
-    bottom: 5.5%; }
-  50% {
-    bottom: 5%; }
-  75% {
-    bottom: 5.5%; }
-  100% {
-    bottom: 6%; } }
-
-header {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  background: url("https://images.unsplash.com/photo-1490596541415-5afadbfbbf02?ixlib=rb-0.3.5&s=a8ae8b389cf5b5f281ac4091334c09b6&auto=format&fit=crop&w=2009&q=100") no-repeat 0/cover;
-  background-attachment: fixed;
-  -webkit-filter: brightness(0.8);
-  filter: brightness(0.8); }
-
-header .my-name {
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #fff;
-  padding: 1.5rem .5rem;
-  text-transform: uppercase; }
-
-header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-top: .5rem; }
-
-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 1rem 0; }
-
-header nav ul li {
-  list-style: none;
-  padding: 0 .5rem; }
-
-header nav ul li a {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #fff;
-  padding: .5rem 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 20px;
-  -webkit-transition: .5s;
-  transition: .5s; }
-
-header nav ul li a:hover {
-  background-color: #538bba; }
-
-header .jumbotron {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: calc(100vh - 8rem); }
-
-header .jumbotron h1 {
-  font-size: 4rem;
-  font-weight: 400;
-  color: #fff;
-  padding: 1rem 0; }
-
-header .jumbotron p {
-  font-size: 6rem;
-  font-weight: 400;
-  color: #fff;
-  padding: 1rem 0; }
-
-header .jumbotron span {
-  font-size: 3rem;
-  font-weight: 400;
-  color: #fff;
-  padding: 1rem 0; }
-
-header i {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(50%);
-  transform: translateX(50%);
-  color: #fff;
-  font-size: 2rem;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite; }
+  border-spacing: 0;
+}

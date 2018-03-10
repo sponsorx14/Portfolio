@@ -5,11 +5,16 @@
 }
 body {
   @include font(62.5%, 400, #000);
-  background-color: #31343a;
   font-family: 'Oswald', sans-serif;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  
+}
+
+.col-lg-12 {
+  width: 100%;
+}
+.col-lg-6 {
+  width: 50%;
 }

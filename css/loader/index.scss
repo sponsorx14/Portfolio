@@ -1,3 +1,5 @@
+@import '../colors/index.scss';
+
 .loader {
   background-color: rgb(66, 68, 71);
   width: 100%;
@@ -22,22 +24,22 @@
           animation: loading 1s ease-in-out infinite;
 }
 .loading-bar:nth-child(1) {
-  background-color: #3498db;
+  background-color: $light-blue;
   -webkit-animation-delay: 0;
           animation-delay: 0;
 }
 .loading-bar:nth-child(2) {
-  background-color: #c0392b;
+  background-color: $light-red;
   -webkit-animation-delay: 0.09s;
           animation-delay: 0.09s;
 }
 .loading-bar:nth-child(3) {
-  background-color: #f1c40f;
+  background-color: $yellow;
   -webkit-animation-delay: .18s;
           animation-delay: .18s;
 }
 .loading-bar:nth-child(4) {
-  background-color: #27ae60;
+  background-color: $green;
   -webkit-animation-delay: .27s;
           animation-delay: .27s;
 }

@@ -1,0 +1,88 @@
+#about {
+  margin: 5rem 0;
+  padding: 0 1rem;
+}
+
+#about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about .container img {
+  max-width: 500px;
+  max-height: 600px;
+  border: 6px solid #fff;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.75);
+}
+
+#about .container article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 1rem;
+  margin-left: 2rem;
+}
+
+#about .container article h1 {
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000;
+}
+
+#about .container article h1 span {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #3498db;
+}
+
+#about .container article h1:after {
+  position: absolute;
+  content: '';
+  background-color: #000;
+  height: 3px;
+  width: 7rem;
+  left: 0;
+  bottom: 10px;
+}
+
+#about .container article p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000;
+  padding: 1rem 0;
+  letter-spacing: .5px;
+  line-height: 1.8rem;
+}
+
+#about .container article button {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  background-color: #3498db;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#about .container article button:hover {
+  border-radius: 0;
+}
