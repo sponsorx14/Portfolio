@@ -1,0 +1,135 @@
+@-webkit-keyframes bounce {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -5%;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 6%;
+  }
+  25% {
+    bottom: 5.5%;
+  }
+  50% {
+    bottom: 5%;
+  }
+  75% {
+    bottom: 5.5%;
+  }
+  100% {
+    bottom: 6%;
+  }
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: url("https://images.unsplash.com/photo-1490596541415-5afadbfbbf02?ixlib=rb-0.3.5&s=a8ae8b389cf5b5f281ac4091334c09b6&auto=format&fit=crop&w=2009&q=100") no-repeat 0/cover;
+  background-attachment: fixed;
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8);
+}
+
+header .my-name {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 1.5rem .5rem;
+  text-transform: uppercase;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: .5rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+header nav ul li {
+  list-style: none;
+  padding: 0 .5rem;
+}
+
+header nav ul li a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header nav ul li a:hover {
+  background-color: #538bba;
+}
+
+header .jumbotron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: calc(100vh - 8rem);
+}
+
+header .jumbotron h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .jumbotron p {
+  font-size: 6rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .jumbotron span {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header i {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  color: #fff;
+  font-size: 2rem;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
