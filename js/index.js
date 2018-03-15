@@ -1,10 +1,3 @@
-//Loader
-window.addEventListener('load', function(){
-  $('.loader').fadeOut(400, function() {
-    $(this).remove();
-  });
-});
-
 $(function(){
 
   // PROFILE TEXT CONSTANTS
@@ -36,8 +29,14 @@ $(function(){
     }
   }
 
-  // NAVBAR OFFSET
-  window.addEventListener('scroll', stickyNav);
 
+  //Loader
+  window.addEventListener('load', function(){
+    $('.loader').fadeOut(400, function() {
+      $(this).remove();
+      window.addEventListener('scroll', stickyNav);
+      printText(profileText);
+    });
+  });
 
 });
