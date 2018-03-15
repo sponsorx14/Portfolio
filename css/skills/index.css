@@ -1,0 +1,43 @@
+#skills {
+  padding: 3rem 0;
+  background-color: #f3f3f3;
+}
+
+#skills h2 {
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000;
+}
+
+#skills h2 span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3498db;
+}
+
+#skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#skills ul li {
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border: 5px solid transparent;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#skills ul li:hover {
+  border: 5px solid black;
+}
+
+#skills ul i {
+  font-size: 8rem;
+}

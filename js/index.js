@@ -1,6 +1,13 @@
+//Loader
+window.addEventListener('load', function(){
+  $('.loader').fadeOut(400, function() {
+    $(this).remove();
+  });
+});
+
 $(function(){
 
-  // LOADER CONSTANTS
+  // PROFILE TEXT CONSTANTS
   const profileText1 = ['J','u','n','i','o','r'];
   const profileText2 = [' ','F','r','o','n','t'];
   const profileText3 = [' ','E','n','d'];
@@ -22,24 +29,12 @@ $(function(){
   }
 
   function stickyNav() {
-    console.log(window.scrollY);
-    console.log(nav.offsetTop);
     if(window.scrollY > navTop) {
-
       document.body.classList.add('fixed-nav');
     } else {
-
       document.body.classList.remove('fixed-nav');
     }
   }
-
-  // LOADER ANIMATION
-  setTimeout(function(){
-    $('.loader').fadeOut(600, function(){
-      $(this).remove();
-      printText(profileText);
-    });
-  },400);
 
   // NAVBAR OFFSET
   window.addEventListener('scroll', stickyNav);
