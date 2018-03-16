@@ -28,16 +28,67 @@
 
 #skills ul li {
   margin: 1.5rem;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   border: 5px solid transparent;
-  -webkit-transition: .5s;
-  transition: .5s;
+  border-radius: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  position: relative;
 }
 
 #skills ul li:hover {
-  border: 5px solid black;
+  border: 5px solid #000;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-#skills ul i {
+#skills ul li:hover i {
+  color: #000;
+}
+
+#skills ul li:hover .tech-name,
+#skills ul li:hover .stars {
+  visibility: visible;
+}
+
+#skills ul li i {
   font-size: 8rem;
+}
+
+#skills ul li .tech-name {
+  visibility: hidden;
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ce930a;
+  top: 30%;
+  left: 50%;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid #ce930a;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+#skills ul li .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  visibility: hidden;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#skills ul li .stars span {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#skills ul li .stars .checked {
+  color: #ce930a;
 }

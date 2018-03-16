@@ -1,6 +1,8 @@
 @import '../colors/index.scss';
 @import '../mixins/index.scss';
 
+
+
 #skills {
   padding: 3rem 0;
   background-color: $light-grey;
@@ -22,16 +24,61 @@
 
     li {
       margin: 1.5rem;
-      padding: 1.5rem;
+      padding: 1.5rem 2rem;
       border: 5px solid transparent;
-      -webkit-transition: .5s;
-      transition: .5s;
+      border-radius: 20px;
+      -webkit-transition: .3s;
+      transition: .3s;
+      cursor: pointer;
+      position: relative;
       &:hover {
-        border: 5px solid black;
+        border: 5px solid $black;
+        background-color: rgba(0,0,0, .8);
+        i {
+          color: $black
+        }
       }
-    }
-    i {
-    font-size: 8rem;
+
+      &:hover .tech-name,
+      &:hover .stars {
+        visibility: visible;
+      }
+      i {
+      font-size: 8rem;
+      }
+      .tech-name {
+        visibility: hidden;
+        position: absolute;
+        @include font(1.5rem, 700, $orange)
+        top: 30%;
+        left: 50%;
+        padding-bottom: .5rem;
+        border-bottom: 2px solid $orange;
+        -webkit-transform: translate(-50%);
+                transform: translate(-50%);
+      }
+      .stars {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: absolute;
+        visibility: hidden;
+        top: 60%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+
+        span {
+          font-size: 1.5rem;
+          color: $white;
+        }
+        .checked {
+          color: $orange;
+        }
+      }
     }
   }
 }
