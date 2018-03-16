@@ -1,0 +1,43 @@
+@import '../colors/index.scss';
+@import '../mixins/index.scss';
+
+@-webkit-keyframes scaleButton {
+  0% {-webkit-transform: scale(1);transform: scale(1);}
+  50% {-webkit-transform: scale(1.1);transform: scale(1.1)}
+  100% {-webkit-transform: scale(1);transform: scale(1);}
+}
+
+@keyframes scaleButton {
+  0% {-webkit-transform: scale(1);transform: scale(1);}
+  50% {-webkit-transform: scale(1.1);transform: scale(1.1)}
+  100% {-webkit-transform: scale(1);transform: scale(1);}
+}
+
+.interested {
+  background-color: $light-blue;
+  text-align: center;
+  .container {
+    padding: 3rem 0;
+    p {
+      @include font(2rem, 400, $white);
+      padding: 2rem 0;
+    }
+    .button-container {
+      padding: 2rem 0;
+      -webkit-animation: scaleButton 2s infinite;
+              animation: scaleButton 2s infinite;
+    }
+    a {
+      @include font(1.5rem, 700, $light-blue);
+      padding: .7rem 1.5rem;
+      background-color: $white;
+      text-decoration: none;
+      border-radius: 20px;
+      -webkit-transition: .5s;
+      transition: .5s;
+      &:hover {
+        border-radius: 0;
+      }
+    }
+  }
+}

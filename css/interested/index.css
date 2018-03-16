@@ -1,0 +1,67 @@
+@-webkit-keyframes scaleButton {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleButton {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.interested {
+  background-color: #3498db;
+  text-align: center;
+}
+
+.interested .container {
+  padding: 3rem 0;
+}
+
+.interested .container p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.interested .container .button-container {
+  padding: 2rem 0;
+  -webkit-animation: scaleButton 2s infinite;
+  animation: scaleButton 2s infinite;
+}
+
+.interested .container a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3498db;
+  padding: .7rem 1.5rem;
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.interested .container a:hover {
+  border-radius: 0;
+}

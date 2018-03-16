@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio</title>
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,14 +42,14 @@
         <a href="#about"><i class="fas fa-angle-double-down"></i></a>
       </div>
     </header>
-    <main id='about'>
+    <main class='about' id='about'>
       <div class="container">
         <img class='col-lg-6' src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3159b23f37c4f3954e97072e00e975ab&auto=format&fit=crop&w=1946&q=100" alt="">
         <article class="col-lg-6">
           <h1>About <span>Me</span></h1>
           <p>
             My name is Rafał Poręba and I am 24. My self-learning programming journey has started in April 2017. I am determined person who aims to become a Full Stack Developer.
-            I would like to work in a team where I could take part in ambitious projects and be able to develop continuously. I am looking for a job in Kraków, but I am considering relocations.
+            I would like to work in a team where I could take part in ambitious projects and be able to develop continuously. I am looking for a job in Nowy Sącz or Kraków, but I am considering relocations.
           </p>
           <p>
             In my spare time I play volleyball and watch a Marvel serials.
@@ -57,7 +58,7 @@
         </article>
       </div>
     </main>
-    <section id='skills'>
+    <section class='skills' id='skills'>
       <div class="container">
         <h2><span>Technologies</span> I use:</h2>
         <ul class='first-row'>
@@ -189,14 +190,38 @@
         </ul>
       </div>
     </section>
-    <section id='projects'>
+    <section class='interested'>
+      <div class="container">
+        <p>Are you interested?</p>
+        <div class="button-container">
+          <a href="#contact">Hire me now!</a>
+        </div>
+      </div>
+    </section>
+    <section class='projects' id='projects'>
       <div class="container">
 
       </div>
     </section>
-    <section id='contact'>
+    <section class='contact' id='contact'>
       <div class="container">
-
+        <h2>Contact <span>Me</span></h2>
+        <form action="https://formspree.io/awrug3@gmail.com" method="POST">
+          <div class="input-container">
+            <div class="input-effect">
+              <input class='input-1' type="text" name="name" placeholder="">
+                <label>Name</label>
+                <span class='focus-border'></span>
+            </div>
+            <div class="input-effect">
+              <input class='input-2' type="email" name="_replyto" placeholder="">
+                <label>Email</label>
+                <span class='focus-border'></span>
+            </div>
+          </div>
+          <textarea class='col-lg-12' name="message" placeholder="Your message"></textarea>
+          <input type="submit" value="Send">
+      </form>
       </div>
     </section>
 

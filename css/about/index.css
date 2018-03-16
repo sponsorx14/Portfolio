@@ -1,15 +1,15 @@
-#about {
+.about {
   margin: 5rem 0;
   padding: 0 1rem;
 }
 
-#about .container {
+.about .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#about .container img {
+.about .container img {
   max-width: 500px;
   max-height: 600px;
   border: 6px solid #fff;
@@ -17,7 +17,7 @@
   box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.75);
 }
 
-#about .container article {
+.about .container article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,7 +35,7 @@
   margin-left: 2rem;
 }
 
-#about .container article h1 {
+.about .container article h1 {
   position: relative;
   text-transform: uppercase;
   padding-bottom: 1rem;
@@ -44,13 +44,13 @@
   color: #000;
 }
 
-#about .container article h1 span {
+.about .container article h1 span {
   font-size: 2rem;
   font-weight: 400;
   color: #3498db;
 }
 
-#about .container article h1:after {
+.about .container article h1:after {
   position: absolute;
   content: '';
   background-color: #000;
@@ -60,7 +60,7 @@
   bottom: 10px;
 }
 
-#about .container article p {
+.about .container article p {
   font-size: 1.5rem;
   font-weight: 400;
   color: #000;
@@ -69,7 +69,7 @@
   line-height: 1.8rem;
 }
 
-#about .container article button {
+.about .container article button {
   font-size: 1.5rem;
   font-weight: 400;
   color: #fff;
@@ -83,6 +83,6 @@
   transition: .5s;
 }
 
-#about .container article button:hover {
+.about .container article button:hover {
   border-radius: 0;
 }

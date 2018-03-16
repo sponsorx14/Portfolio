@@ -12,6 +12,11 @@ $(function(){
   const nav = document.querySelector('.nav');
   const navTop = nav.offsetTop;
 
+  //Contact CONSTANTS
+  let input1 = document.querySelector('.input-1');
+  let input2 = document.querySelector('.input-2');
+
+
   // FUNCTIONS
   function printText(arr) {
     for (let i=0; i<arr.length; i++) {
@@ -29,6 +34,14 @@ $(function(){
     }
   }
 
+  function inputAnimation() {
+    if(this.value != '' ){
+      this.classList.add('has-content');
+    }else {
+      this.classList.remove('has-content');
+    }
+  }
+
 
   //Loader
   window.addEventListener('load', function(){
@@ -36,7 +49,13 @@ $(function(){
       $(this).remove();
       window.addEventListener('scroll', stickyNav);
       printText(profileText);
+
     });
   });
+
+  //Contact Input Animation
+  input1.addEventListener('focusout', inputAnimation);
+  input2.addEventListener('focusout', inputAnimation);
+
 
 });

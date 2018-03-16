@@ -1,9 +1,9 @@
-#skills {
+.skills {
   padding: 3rem 0;
   background-color: #f3f3f3;
 }
 
-#skills h2 {
+.skills h2 {
   text-align: center;
   padding: 3rem 0;
   font-size: 2rem;
@@ -11,13 +11,13 @@
   color: #000;
 }
 
-#skills h2 span {
+.skills h2 span {
   font-size: 2rem;
   font-weight: 700;
   color: #3498db;
 }
 
-#skills ul {
+.skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,7 +26,7 @@
   justify-content: center;
 }
 
-#skills ul li {
+.skills ul li {
   margin: 1.5rem;
   padding: 1.5rem 2rem;
   border: 5px solid transparent;
@@ -37,25 +37,25 @@
   position: relative;
 }
 
-#skills ul li:hover {
+.skills ul li:hover {
   border: 5px solid #000;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #0b4f7c;
 }
 
-#skills ul li:hover i {
+.skills ul li:hover i {
   color: #000;
 }
 
-#skills ul li:hover .tech-name,
-#skills ul li:hover .stars {
+.skills ul li:hover .tech-name,
+.skills ul li:hover .stars {
   visibility: visible;
 }
 
-#skills ul li i {
+.skills ul li i {
   font-size: 8rem;
 }
 
-#skills ul li .tech-name {
+.skills ul li .tech-name {
   visibility: hidden;
   position: absolute;
   font-size: 1.5rem;
@@ -69,7 +69,7 @@
   transform: translate(-50%);
 }
 
-#skills ul li .stars {
+.skills ul li .stars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,11 +84,11 @@
   transform: translateX(-50%);
 }
 
-#skills ul li .stars span {
+.skills ul li .stars span {
   font-size: 1.5rem;
   color: #fff;
 }
 
-#skills ul li .stars .checked {
+.skills ul li .stars .checked {
   color: #ce930a;
 }
