@@ -13,9 +13,9 @@ $(function(){
   const navTop = nav.offsetTop;
 
   //Contact CONSTANTS
-  let input1 = document.querySelector('.input-1');
-  let input2 = document.querySelector('.input-2');
-
+  const input1 = document.querySelector('.input-1');
+  const input2 = document.querySelector('.input-2');
+  const textarea = document.querySelector('.textarea');
 
   // FUNCTIONS
   function printText(arr) {
@@ -56,6 +56,7 @@ $(function(){
   //Contact Input Animation
   input1.addEventListener('focusout', inputAnimation);
   input2.addEventListener('focusout', inputAnimation);
+  textarea.addEventListener('focusout', inputAnimation);
 
 
 });

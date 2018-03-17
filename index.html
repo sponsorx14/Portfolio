@@ -208,19 +208,20 @@
         <h2>Contact <span>Me</span></h2>
         <form action="https://formspree.io/awrug3@gmail.com" method="POST">
           <div class="input-container">
-            <div class="input-effect">
-              <input class='input-1' type="text" name="name" placeholder="">
-                <label>Name</label>
+            <div class="input-effect col-lg-5">
+              <input class='input-1 ' type="text" name="name" placeholder="Name">
                 <span class='focus-border'></span>
             </div>
-            <div class="input-effect">
-              <input class='input-2' type="email" name="_replyto" placeholder="">
-                <label>Email</label>
+            <div class="input-effect col-lg-5">
+              <input class='input-2' type="email" name="_replyto" placeholder="Email">
                 <span class='focus-border'></span>
             </div>
           </div>
-          <textarea class='col-lg-12' name="message" placeholder="Your message"></textarea>
-          <input type="submit" value="Send">
+          <div class="input-effect col-lg-12">
+            <textarea class='textarea' name="message" placeholder="Message"></textarea>
+              <span class='focus-border'></span>
+          </div>
+          <input class='submit col-lg-3' type="submit" value="Submit">
       </form>
       </div>
     </section>
