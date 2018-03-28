@@ -12,6 +12,7 @@ $(function(){
   const nav = document.querySelector('.nav');
   const navTop = nav.offsetTop;
 
+
   //Contact CONSTANTS
   const input1 = document.querySelector('.input-1');
   const input2 = document.querySelector('.input-2');
@@ -34,6 +35,8 @@ $(function(){
     }
   }
 
+
+
   function inputAnimation() {
     if(this.value != '' ){
       this.classList.add('has-content');
@@ -43,13 +46,16 @@ $(function(){
   }
 
 
+  //Navbar active
+
+
+
   //Loader
   window.addEventListener('load', function(){
     $('.loader').fadeOut(400, function() {
       $(this).remove();
       window.addEventListener('scroll', stickyNav);
       printText(profileText);
-
     });
   });
 

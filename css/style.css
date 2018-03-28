@@ -257,6 +257,10 @@ header nav .container .nav-links:hover {
   background-color: #3498db;
 }
 
+header nav .container .active {
+  background-color: #3498db;
+}
+
 header .jumbotron {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -581,6 +585,79 @@ header i {
 
 .interested .container a:hover {
   border-radius: 0;
+}
+
+.projects {
+  background-color: #f3f3f3;
+  padding: 3rem 0;
+}
+
+.projects .projects-text {
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.projects .projects-text span {
+  color: #3498db;
+}
+
+.projects main {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects .project-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  min-height: 240px;
+  border: 2px solid #ccc;
+  padding: 1rem;
+  margin: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.projects .project-content a {
+  text-decoration: none;
+}
+
+.projects .project-content figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.projects .project-content figcaption {
+  padding: 0 .5rem;
+  line-height: 1.2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.projects .project-content:hover {
+  background-color: #fff;
+}
+
+.projects .project-image {
+  max-width: 280px;
+  max-height: 180px;
+  border: 3px solid #ccc;
 }
 
 .contact {
