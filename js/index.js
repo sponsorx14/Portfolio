@@ -18,6 +18,10 @@ $(function(){
   const input2 = document.querySelector('.input-2');
   const textarea = document.querySelector('.textarea');
 
+  //Aside CONSTANTS
+  const asideLinks = document.querySelector('.aside-links');
+  const scrollTopButton = document.querySelector('.scroll-top');
+
   // FUNCTIONS
   function printText(arr) {
     for (let i=0; i<arr.length; i++) {
@@ -28,14 +32,26 @@ $(function(){
   }
 
   function stickyNav() {
-    if(window.scrollY > navTop) {
-      document.body.classList.add('fixed-nav');
-    } else {
-      document.body.classList.remove('fixed-nav');
-    }
+    setTimeout(function(){
+      if(window.scrollY > navTop) {
+        document.body.classList.add('fixed-nav');
+      } else {
+        document.body.classList.remove('fixed-nav');
+      }
+    },50)
   }
 
-
+  function showAside() {
+    setTimeout(function(){
+      if(window.scrollY > 850){
+        $(asideLinks).fadeIn();
+        $(scrollTopButton).fadeIn();
+      } else {
+        $(asideLinks).fadeOut(200);
+        $(scrollTopButton).fadeOut(200);
+      }
+    },400)
+  }
 
   function inputAnimation() {
     if(this.value != '' ){
@@ -46,15 +62,12 @@ $(function(){
   }
 
 
-  //Navbar active
-
-
-
   //Loader
   window.addEventListener('load', function(){
     $('.loader').fadeOut(400, function() {
       $(this).remove();
       window.addEventListener('scroll', stickyNav);
+      window.addEventListener('scroll', showAside);
       printText(profileText);
     });
   });

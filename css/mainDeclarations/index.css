@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   color: #000;
   font-family: 'Poppins', sans-serif;
+  position: relative;
 }
 
 .container {

@@ -1,0 +1,42 @@
+@import '../mixins/index.scss';
+@import '../colors/index.scss';
+
+footer {
+  margin-top: 2rem;
+  padding: .5rem 0;
+  background-color: $dark-grey;
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      li {
+        -webkit-transition: 1s;
+        transition: 1s;
+        border-radius: 10px;
+        margin: 0 .5rem;
+        i {
+          @include font(2rem, 400, $white);
+          padding: 1rem;
+        }
+        &:hover {
+          -webkit-transition: 1s;
+          transition: 1s;
+          background-color: rgba(255,255,255, .1);
+        }
+      }
+    }
+    p {
+      @include font(1rem, 400, $white);
+    }
+  }
+}
