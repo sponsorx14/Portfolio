@@ -95,10 +95,6 @@ header nav .container .nav-links:hover {
   background-color: #3498db;
 }
 
-header nav .container .active {
-  background-color: #3498db;
-}
-
 header .jumbotron {
   display: -webkit-box;
   display: -ms-flexbox;

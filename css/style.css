@@ -315,10 +315,6 @@ header nav .container .nav-links:hover {
   background-color: #3498db;
 }
 
-header nav .container .active {
-  background-color: #3498db;
-}
-
 header .jumbotron {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,7 +391,7 @@ header i {
 }
 
 .about {
-  padding: 6rem 1rem;
+  padding: 8rem 0;
 }
 
 .about .container {
@@ -483,7 +479,7 @@ header i {
 }
 
 .skills {
-  padding: 6rem 0;
+  padding: 8rem 0;
   background-color: #f3f3f3;
 }
 
@@ -647,7 +643,7 @@ header i {
 
 .projects {
   background-color: #f3f3f3;
-  padding: 6rem 0;
+  padding: 8rem 0;
 }
 
 .projects .projects-text {
@@ -719,7 +715,7 @@ header i {
 }
 
 .contact {
-  padding: 6rem 0;
+  padding: 8rem 0;
   background-color: #fff;
 }
 

@@ -61,6 +61,12 @@ $(function(){
     }
   }
 
+  function getActive(e){
+    e.preventDefault();
+    $(this).removeClass('active');
+
+  }
+
   function smoothScroll(e) {
     e.preventDefault();
     let target = this.hash;
@@ -71,6 +77,7 @@ $(function(){
     window.location.hash = target;
   });
   }
+
 
 
   //Loader
@@ -90,9 +97,8 @@ $(function(){
 
 
   //Smooth scroll events
-  $('.nav-links').on('click', smoothScroll);
   $('.scroll-top-button').on('click', smoothScroll);
   $('.jumbotron-arrow').on('click', smoothScroll);
-
+  $('.nav-links').on('click', smoothScroll);
 
 });
