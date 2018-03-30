@@ -190,7 +190,7 @@ body {
   font-size: 2rem;
   font-weight: 400;
   color: #000;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .aside-links ul li:first-child {
@@ -354,6 +354,7 @@ header .jumbotron span {
   font-size: 3rem;
   font-weight: 400;
   color: #fff;
+  height: 80px;
   padding: 1rem 0;
 }
 
@@ -394,8 +395,7 @@ header i {
 }
 
 .about {
-  margin: 5rem 0;
-  padding: 0 1rem;
+  padding: 6rem 1rem;
 }
 
 .about .container {
@@ -483,13 +483,13 @@ header i {
 }
 
 .skills {
-  padding: 3rem 0;
+  padding: 6rem 0;
   background-color: #f3f3f3;
 }
 
 .skills h2 {
   text-align: center;
-  padding: 3rem 0;
+  padding-bottom: 3rem;
   font-size: 2rem;
   font-weight: 400;
   color: #000;
@@ -647,11 +647,11 @@ header i {
 
 .projects {
   background-color: #f3f3f3;
-  padding: 3rem 0;
+  padding: 6rem 0;
 }
 
 .projects .projects-text {
-  padding: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
   font-size: 2rem;
   font-weight: 400;
@@ -719,11 +719,8 @@ header i {
 }
 
 .contact {
+  padding: 6rem 0;
   background-color: #fff;
-}
-
-.contact .container {
-  padding: 2rem 0;
 }
 
 .contact .container h2 {

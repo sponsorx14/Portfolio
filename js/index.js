@@ -61,6 +61,17 @@ $(function(){
     }
   }
 
+  function smoothScroll(e) {
+    e.preventDefault();
+    let target = this.hash;
+    $target = $(target);
+    $('html, body').stop().animate({
+    'scrollTop': $target.offset().top
+    }, 900, 'swing', function () {
+    window.location.hash = target;
+  });
+  }
+
 
   //Loader
   window.addEventListener('load', function(){
@@ -76,6 +87,12 @@ $(function(){
   input1.addEventListener('focusout', inputAnimation);
   input2.addEventListener('focusout', inputAnimation);
   textarea.addEventListener('focusout', inputAnimation);
+
+
+  //Smooth scroll events
+  $('.nav-links').on('click', smoothScroll);
+  $('.scroll-top-button').on('click', smoothScroll);
+  $('.jumbotron-arrow').on('click', smoothScroll);
 
 
 });

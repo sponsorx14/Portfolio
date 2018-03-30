@@ -3,9 +3,9 @@
 
 .projects {
   background-color: $light-grey;
-  padding: 3rem 0;
+  padding: 6rem 0;
   .projects-text {
-    padding: 2rem;
+    padding-bottom: 2rem;
     text-align: center;
     @include font(2rem, 400, $black);
     span {

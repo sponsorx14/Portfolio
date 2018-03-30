@@ -99,6 +99,7 @@ header {
     }
     span {
       @include font(3rem, 400, $white);
+      height: 80px;
       padding: 1rem 0;
     }
   }

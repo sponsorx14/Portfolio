@@ -134,6 +134,7 @@ header .jumbotron span {
   font-size: 3rem;
   font-weight: 400;
   color: #fff;
+  height: 80px;
   padding: 1rem 0;
 }
 

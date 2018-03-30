@@ -1,11 +1,11 @@
 .skills {
-  padding: 3rem 0;
+  padding: 6rem 0;
   background-color: #f3f3f3;
 }
 
 .skills h2 {
   text-align: center;
-  padding: 3rem 0;
+  padding-bottom: 3rem;
   font-size: 2rem;
   font-weight: 400;
   color: #000;
