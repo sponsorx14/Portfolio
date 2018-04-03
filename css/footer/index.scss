@@ -33,9 +33,16 @@ footer {
           transition: 1s;
           background-color: rgba(255,255,255, .1);
         }
+        .footer-cv-download {
+          text-decoration: none;
+          display: block;
+          padding: 1rem;
+          @include font(1.7rem, 400, $white);
+        }
       }
     }
     p {
+      text-align: center;
       @include font(1rem, 400, $white);
     }
   }

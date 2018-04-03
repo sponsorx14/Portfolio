@@ -26,12 +26,15 @@ header {
   background: url('https://images.unsplash.com/photo-1490596541415-5afadbfbbf02?ixlib=rb-0.3.5&s=a8ae8b389cf5b5f281ac4091334c09b6&auto=format&fit=crop&w=2009&q=100') no-repeat 0/cover;
   background-attachment: fixed;
 
-  .my-name{
-    text-decoration: none;
-    @include font(1.5rem, 700, $white);
-    letter-spacing: .5px;
+  .navbar-header {
     padding: 1.5rem .5rem;
-    text-transform: uppercase;
+    .my-name{
+      text-decoration: none;
+      @include font(1.5rem, 700, $white);
+      letter-spacing: .5px;
+      padding-left: 1rem;
+      text-transform: uppercase;
+    }
   }
   nav {
     max-width: 100vw;
@@ -45,7 +48,7 @@ header {
           -ms-flex-pack: justify;
               justify-content: space-between;
 
-      ul {
+      .navbar {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -59,6 +62,38 @@ header {
 
         }
       }
+      .hamburger {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 1rem;
+        z-index: 4;
+        .line {
+          width: 50px;
+          height: 5px;
+          background-color: #ecf0f1;
+          display: block;
+          margin: 8px auto;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        &.is-active .line:nth-child(2){
+          opacity: 0;
+        }
+        &.is-active .line:nth-child(1){
+          -webkit-transform: translateY(13px) rotate(45deg);
+          transform: translateY(13px) rotate(45deg);
+        }
+        &.is-active .line:nth-child(3){
+          -webkit-transform: translateY(-13px) rotate(-45deg);
+          transform: translateY(-13px) rotate(-45deg);
+        }
+      }
+
       .nav-links {
         @include font(1.2rem, 700, $white);
         padding: .5rem 1rem;
@@ -75,6 +110,8 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -85,22 +122,25 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: calc(100vh - 8rem);
+    height: 100vh;
     h1 {
       @include font(4rem, 400, $white);
       padding: 1rem 0;
+      text-align: center;
     }
     p {
       @include font(6rem, 400, $white);
       padding: 1rem 0;
+      text-align: center;
     }
     span {
       @include font(3rem, 400, $white);
       height: 80px;
       padding: 1rem 0;
+      text-align: center;
     }
   }
-  i {
+  .jumbotron-arrow {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(50%);
@@ -123,8 +163,11 @@ header {
   transition: .5s background-color;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0, .75);
           box-shadow: 0px 10px 20px 0px rgba(0,0,0, .75);
-  a {
+  .my-name{
     color: $light-blue;
+  }
+  .hamburger .line {
+    background-color: $light-blue;
   }
   .nav-links {
     color: $black;

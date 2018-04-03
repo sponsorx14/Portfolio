@@ -1,0 +1,235 @@
+.col-lg-3 {
+  width: calc((100%/12) * 3);
+}
+
+.col-lg-3 {
+  width: 25%;
+}
+
+.col-lg-5 {
+  width: calc((100%/12) * 5);
+}
+
+.col-lg-6 {
+  width: 50%;
+}
+
+.col-lg-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .projects main {
+    margin: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .col-sm-4 {
+    width: calc((100%/12) * 4);
+  }
+  .col-sm-5 {
+    width: calc((100%/12) * 5);
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-8 {
+    width: calc((100%/12) * 8);
+  }
+  .col-sm-10 {
+    width: calc((100%/12) * 10);
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  body.fixed-nav header nav .navbar {
+    background-color: #fff;
+  }
+  body.fixed-nav header nav .navbar.navbar-collapse li a {
+    color: #3498db;
+  }
+  header nav .container {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  header nav .container .navbar-header {
+    z-index: 3;
+  }
+  header nav .container .navbar {
+    padding-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: fixed;
+  }
+  header nav .container .navbar.navbar-collapse {
+    width: 100%;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  header nav .container .navbar.navbar-collapse li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: .5rem 0;
+  }
+  header nav .container .navbar.navbar-collapse li a {
+    text-align: center;
+    width: 300px;
+    padding: 1rem 0;
+    color: #fff;
+  }
+  header nav .container .navbar.navbar-collapse li a:hover {
+    color: #000;
+  }
+  header nav .container .hamburger {
+    display: block;
+  }
+  .about .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .about .container img {
+    margin: 0 auto;
+  }
+  .about .container article {
+    margin: 0;
+    margin-top: 3rem;
+  }
+  .skills ul {
+    padding: 0 3rem;
+    margin: 0 3rem;
+  }
+  .skills ul li {
+    margin: 2.5rem;
+  }
+  .skills ul li .stars,
+  .skills ul li .tech-name {
+    left: 50%;
+  }
+  .projects main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .projects main div {
+    margin: 0 auto;
+  }
+  .contact {
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  .skills ul {
+    padding: 0 1rem;
+    margin: 0 1rem;
+  }
+  .skills ul li {
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .col-xs-4 {
+    width: calc((100%/12) * 4);
+  }
+  .col-xs-5 {
+    width: calc((100%/12) * 5);
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-8 {
+    width: calc((100%/12) * 8);
+  }
+  .col-xs-10 {
+    width: calc((100%/12) * 10);
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+  header .jumbotron h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  header .jumbotron p {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  header .jumbotron span {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  header .jumbotron-arrow {
+    display: none;
+  }
+  .about {
+    padding: 6rem 0;
+  }
+  .skills {
+    padding: 6rem 0;
+  }
+  .skills ul {
+    padding: 0 1rem;
+    margin: 0;
+  }
+  .skills ul li {
+    margin: 1rem;
+  }
+  .projects {
+    padding: 6rem 0;
+  }
+  .projects main {
+    margin: 2rem 0;
+  }
+  .projects .project-content {
+    margin: 2rem 0;
+  }
+  .contact .container form .input-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  footer .container p {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  footer .container ul {
+    padding: 1rem;
+  }
+}

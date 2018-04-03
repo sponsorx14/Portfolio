@@ -15,7 +15,6 @@
               box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.75);
     }
     article {
-
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -44,22 +43,24 @@
           content: '';
           background-color: $black;
           height: 3px;
-          width: 7rem;
+          width: 6rem;
           left: 0;
           bottom: 10px;
         }
       }
       p {
-        @include font(1.5rem, 400, $black);
+        @include font(1.4rem, 400, $black);
         padding: 1rem 0;
         letter-spacing: .5px;
-        line-height: 1.8rem;
+        line-height: 1.6rem;
       }
-      button {
+      a {
         @include font(1.5rem, 400, $white);
         margin-top: 1rem;
         cursor: pointer;
+        outline: none;
         border: none;
+        text-decoration: none;
         padding: 1rem 2rem;
         border-radius: 30px;
         background-color: $light-blue;

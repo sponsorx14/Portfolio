@@ -11,7 +11,7 @@ $(function(){
   //NAVBAR CONSTANTS
   const nav = document.querySelector('.nav');
   const navTop = nav.offsetTop;
-
+  const hamburger = document.querySelector('.hamburger');
 
   //Contact CONSTANTS
   const input1 = document.querySelector('.input-1');
@@ -43,11 +43,18 @@ $(function(){
 
   function showAside() {
     setTimeout(function(){
-      if(window.scrollY > 850){
+      if(window.scrollY > 1300 && window.innerWidth > 1250){
         $(asideLinks).fadeIn();
-        $(scrollTopButton).fadeIn();
       } else {
         $(asideLinks).fadeOut(200);
+      }
+    },400)
+  }
+  function showScrollTopButton() {
+    setTimeout(function(){
+      if(window.scrollY > 800){
+        $(scrollTopButton).fadeIn();
+      } else {
         $(scrollTopButton).fadeOut(200);
       }
     },400)
@@ -64,10 +71,11 @@ $(function(){
   function getActive(e){
     e.preventDefault();
     $(this).removeClass('active');
-
   }
 
   function smoothScroll(e) {
+    $('.hamburger').removeClass('is-active');
+    $('.navbar').removeClass('navbar-collapse');
     e.preventDefault();
     let target = this.hash;
     $target = $(target);
@@ -78,17 +86,26 @@ $(function(){
   });
   }
 
-
-
   //Loader
   window.addEventListener('load', function(){
     $('.loader').fadeOut(400, function() {
       $(this).remove();
-      window.addEventListener('scroll', stickyNav);
-      window.addEventListener('scroll', showAside);
       printText(profileText);
     });
   });
+
+  //stickyNav
+  window.addEventListener('scroll', function(){
+    stickyNav();
+    showAside();
+    showScrollTopButton();
+
+  });
+  hamburger.addEventListener('click', function(){
+    this.classList.toggle('is-active');
+    $('.navbar').toggleClass('navbar-collapse');
+
+  })
 
   //Contact Input Animation
   input1.addEventListener('focusout', inputAnimation);
@@ -100,5 +117,6 @@ $(function(){
   $('.scroll-top-button').on('click', smoothScroll);
   $('.jumbotron-arrow').on('click', smoothScroll);
   $('.nav-links').on('click', smoothScroll);
+  $('.contact-button').on('click', smoothScroll);
 
 });
