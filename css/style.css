@@ -773,6 +773,20 @@ header .jumbotron-arrow {
   border: 3px solid #ccc;
 }
 
+.projects h3 {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.projects h3 a {
+  text-decoration: none;
+  color: #3498db;
+}
+
 .contact {
   padding: 6rem 0;
   background-color: #fff;

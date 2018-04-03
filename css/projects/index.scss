@@ -59,4 +59,14 @@
     max-height: 180px;
     border: 3px solid $grey;
   }
+  h3 {
+    margin-top: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    @include font(1.5rem, 400, $black);
+    a {
+      text-decoration: none;
+      color: $light-blue;
+    }
+  }
 }
