@@ -1,11 +1,7 @@
 $(function(){
 
   // PROFILE TEXT CONSTANTS
-  const profileText1 = ['J','u','n','i','o','r'];
-  const profileText2 = [' ','F','r','o','n','t'];
-  const profileText3 = [' ','E','n','d'];
-  const profileText4 = [' ','D','e','v','e','l','o','p','e','r'];
-  const profileText = [...profileText1, ...profileText2, ...profileText3, ...profileText4];
+  const profileText = 'Junior Front End Developer';
   const animateTextSpan = document.getElementById('animate-text');
 
   //NAVBAR CONSTANTS
@@ -23,13 +19,14 @@ $(function(){
   const scrollTopButton = document.querySelector('.scroll-top');
 
   // FUNCTIONS
-  function printText(arr) {
-    for (let i=0; i<arr.length; i++) {
+  function printText(text) {
+    for (let i=0; i<text.length; i++) {
         setTimeout(function() {
-            animateTextSpan.append(...arr[i]);
+            animateTextSpan.append(...text[i]);
         }, 100 * i);
     }
   }
+
 
   function stickyNav() {
     setTimeout(function(){
